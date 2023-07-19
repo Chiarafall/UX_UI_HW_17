@@ -1,0 +1,131 @@
+/* Navigation styles */
+
+nav { /* this is not right, it should be nav{} */
+    width: 73%;
+    padding: 1%;
+    position: fixed;
+    
+}
+
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+
+}
+h1 {
+    font-family:raleway, arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #79595D;
+    padding: 3%
+}
+h2 {
+    font-family:raleway, arial, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-style: oblique;
+    color: #79595D;
+    padding: 3% 
+}
+
+
+
+/* NOT working! maybe try with :hover instead*/
+.hover {
+    background-color: white;
+  }
+
+/* NOT working! */
+.active {
+    color: #79595D;
+
+}  
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+ul {
+    width: 50%;
+    margin-left: auto;
+    font-family: anonymous pro, Courier, monospace; /* now is working! */
+    font-size: 18px;
+    color: #79595D;
+
+}
+
+
+
+/* Body styles */
+
+body {
+    background-color: #E4DDDE;
+
+}
+/* Hero section styles */
+.hero {
+    margin: 124px 124px;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 15% auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "Hello Chiara" "intro2"
+    "intro1" "intro2";
+    text-align: start;
+
+}
+.Hello Chiara{
+}
+
+.intro2{
+    font-family: anonymous pro, Courier, monospace; /* now is working! */
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 125%;
+    color: #79595D;
+    padding: 3% 
+
+}
+.intro1 {
+    font-family:raleway, arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 125%;
+    color: #79595D;
+    padding: 3% 
+
+}
+
+
+
+/* Footer styles */
+.copy-footer {
+    font-family: anonymous pro, Courier, monospace; /* now is working! */
+    font-size: 15px;
+ }
+
+footer {
+    background-color: #79595D; /* changed colour and padding */
+    padding: 3%;
+    font-family:raleway, arial, sans-serif;
+    font-weight: 400;
+    color: #E5DFE0;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
+ul {
+    vertical-align: top;
+}
+li {
+    padding: 1%;
+}
