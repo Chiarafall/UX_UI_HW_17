@@ -4,7 +4,6 @@ nav { /* this is not right, it should be nav{} */
     width: 73%;
     padding: 1%;
     position: fixed;
-    
 }
 
 
@@ -12,6 +11,7 @@ nav { /* this is not right, it should be nav{} */
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
+
 
 }
 h1 {
@@ -34,31 +34,37 @@ h2 {
 
 
 
-/* NOT working! maybe try with :hover instead*/
-.hover {
-    background-color: white;
-  }
-
-/* NOT working! */
-.active {
-    color: #79595D;
-
-}  
-
 .logo {
     width: 23%;
     padding: 1%;
     text-align: center;
+
 }
 ul {
     width: 50%;
     margin-left: auto;
-    font-family: anonymous pro, Courier, monospace; /* now is working! */
+    font-family: anonymous pro, Courier, monospace; /* now it is working! */
     font-size: 18px;
     color: #79595D;
 
 }
 
+a:-webkit-any-link {
+    color: #79595D;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.HoverMenu {
+    transition: 0.3s;
+
+}
+
+.HoverMenu:hover {
+  font-size: 22px;
+
+}
 
 
 /* Body styles */
