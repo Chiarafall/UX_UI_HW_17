@@ -4,6 +4,8 @@ nav { /* this is not right, it should be nav{} */
     width: 73%;
     padding: 1%;
     position: fixed;
+    background-color: #E4DDDE;
+
 }
 
 
@@ -33,11 +35,12 @@ h2 {
 }
 
 
-
 .logo {
     width: 23%;
     padding: 1%;
     text-align: center;
+    background-color: #E4DDDE;
+
 
 }
 ul {
@@ -67,6 +70,13 @@ a:-webkit-any-link {
 }
 
 
+/* FIX CONTACT ICONS */
+
+#contacts {
+
+}
+
+
 /* Body styles */
 
 body {
@@ -91,7 +101,7 @@ body {
 .Hello Chiara{
 }
 
-.intro2{
+.intro2 {
     font-family: anonymous pro, Courier, monospace; /* now is working! */
     font-size: 22px;
     letter-spacing: 1px;
@@ -118,7 +128,9 @@ body {
     font-size: 15px;
  }
 
+ 
 footer {
+    display: grid;
     background-color: #79595D; /* changed colour and padding */
     padding: 3%;
     font-family:raleway, arial, sans-serif;
@@ -126,8 +138,39 @@ footer {
     color: #E5DFE0;
     font-size: 20px;
     letter-spacing: 1px;
-
 }
+
+/* NOT WORKING ---- FIX! */
+.grid-footer {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-areas: 
+    "footer1 footer3 footer5"
+    "copy-footer footer4 footer5";
+    text-align: start;
+}
+
+.footer1 {
+    grid-area: footer1;
+}
+
+.copy-footer {
+    grid-area: copy-footer;
+}
+
+.footer3 {
+    grid-area: footer3;
+}
+
+.footer4 {
+    grid-area: footer4;
+}
+
+.footer5 {
+    grid-area: footer5;
+}
+
 
 ul {
     vertical-align: top;
@@ -135,3 +178,5 @@ ul {
 li {
     padding: 1%;
 }
+
+/* THIS IS A CSS COMMENT */
